@@ -1,0 +1,660 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #111;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 90px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 3;
+}
+
+.logo-container {
+  gap: 10px;
+}
+
+.logo-img {
+  width: 20px;
+  height: 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.nav-links div {
+  cursor: pointer;
+}
+
+.nav-links img {
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+}
+
+.icons {
+  gap: 28px;
+  font-size: 20px;
+}
+
+.icons div {
+  justify-content: center;
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.icons .notification {
+  position: relative;
+  cursor: pointer;
+}
+
+.icons .notification span {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(252, 80, 61);
+  position: absolute;
+  border-radius: 100%;
+  top: -2px;
+  right: 2px;
+}
+
+.hero {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px 90px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 380px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.hero-text p {
+  font-size: 19px;
+  color: rgb(103, 103, 103);
+  margin-bottom: 40px;
+}
+
+.hero-text button {
+  background-color: rgb(252, 80, 61);
+  color: white;
+  border: none;
+  padding: 20px 36px;
+  font-weight: 600;
+  border-radius: 99px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.hero-text button:hover {
+  background-color: rgb(248, 37, 13);
+  transition: all 0.3s ease;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  flex: 1;
+  width: 70%;
+  right: 20%;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-image .circle-bg {
+  width: 400px;
+  height: 400px;
+  background-color: whitesmoke;
+  position: absolute;
+  z-index: 1;
+  top: 22%;
+  right: 16%;
+  border-radius: 100%;
+}
+
+.side-buttons {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-buttons .side-button {
+  background-color: white;
+  gap: 16px;
+  padding: 20px 25px;
+  min-width: 250px;
+  border-radius: 18px;
+  border: 1px solid #dddddda6;
+}
+
+.side-buttons .side-button.first {
+  border: none;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.lifestyle-box {
+  background-color: white;
+  border: 1px solid #dddddda6;
+  padding: 20px 25px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-buttons .side-button-img {
+  padding: 8px;
+  background-color: black;
+  width: fit-content;
+  border-radius: 100%;
+}
+
+.side-buttons .side-button-img.first {
+  background-color: rgb(252, 80, 61);
+  padding: 7px 7px 8px 7px;
+}
+
+.side-buttons .side-button-img img {
+  width: 20px;
+  height: 20px;
+}
+
+.side-buttons .side-button span {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.lifestyle-box p {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.lifestyle-box span {
+  font-size: 15px;
+}
+
+.lifestyle-box button {
+  padding: 12px 25px;
+  width: fit-content;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.get-all {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.features {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: white;
+  border: 1px solid #dddddda6;
+  border-left: none;
+  border-right: none;
+  gap: 80px;
+}
+
+.feature-images {
+  gap: 18px;
+}
+
+.feature-images div {
+  width: 200px;
+  height: 150px;
+  border-radius: 90px;
+  overflow: hidden;
+}
+
+.feature-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.feature-text {
+  gap: 18px;
+}
+
+.feature h4 {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 700;
+  max-width: 100px;
+}
+
+.feature p {
+  font-size: 16px;
+  color: rgb(103, 103, 103);
+  margin: 0 auto;
+  max-width: 160px;
+}
+
+.exclusive {
+  margin-top: 50px;
+  text-align: center;
+  padding: 40px 90px;
+}
+
+.exclusive h2 {
+  font-size: 52px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.exclusive p {
+  font-size: 16px;
+  color: rgb(103, 103, 103);
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -80px;
+  }
+
+  .hero-text {
+    max-width: fit-content;
+    margin-bottom: 0px;
+    background-color: white;
+    text-align: start;
+  }
+
+  .hero-text h1 {
+    padding-top: 15px;
+    font-size: 48px;
+    margin-top: -90px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+
+  .hero-text p {
+    font-size: 17px;
+    margin-bottom: 18px;
+  }
+
+  .hero-image {
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-top: -20px;
+  }
+
+  .hero-image .circle-bg {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 18%;
+    right: 19%;
+  }
+
+  .side-buttons {
+    position: absolute;
+    left: 10px;
+    top: 25%;
+    width: fit-content;
+    align-items: center;
+  }
+
+  .side-buttons .side-button {
+    gap: 4px;
+    padding: 5px 8px;
+    min-width: fit-content;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+
+  .side-buttons .side-button.first {
+    margin-left: 80px;
+  }
+
+  .lifestyle-box {
+    padding: 5px 8px;
+    border-radius: 3px;
+    flex-direction: row;
+    gap: 4px;
+    justify-content: start;
+    align-items: center;
+    border: none;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    margin-left: 80px;
+  }
+
+  .side-buttons .side-button-img {
+    padding: 3px;
+    border-radius: 100%;
+  }
+
+  .side-buttons .side-button-img.first {
+    padding: 2.5px;
+  }
+
+  .side-buttons .side-button-img img {
+    min-width: 5px;
+    min-height: 5px;
+    width: 5px;
+    height: 5px;
+  }
+
+  .side-buttons .side-button span {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .lifestyle-box p {
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  .lifestyle-box div span {
+    display: none;
+  }
+
+  .lifestyle-box button {
+    display: none;
+  }
+
+  .features {
+    position: static;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .feature-images {
+    width: 100%;
+    flex-grow: 1;
+    gap: 5%;
+  }
+
+  .feature-images div {
+    flex-grow: 1;
+    min-width: 40%;
+    height: 100px;
+  }
+
+  .feature-text {
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  .feature h4 {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: fit-content;
+  }
+
+  .feature p {
+    font-size: 14px;
+    max-width: fit-content;
+  }
+
+  .exclusive {
+    margin-top: 0px;
+    padding: 30px 20px;
+  }
+
+  .exclusive h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+
+  .exclusive p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 540px) {
+  .navbar {
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    top: 0;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .icons {
+    gap: 18px;
+  }
+
+  .hero {
+    padding: 30px 20px;
+    margin-top: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+    margin-top: -80px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .hero-text button {
+    padding: 16px 32px;
+    font-weight: 600;
+    border-radius: 99px;
+    font-size: 15px;
+  }
+
+  .hero-image .circle-bg {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 18%;
+    right: 19%;
+  }
+
+  .side-buttons {
+    position: absolute;
+    top: auto;
+    left: 10px;
+    width: fit-content;
+    align-items: center;
+  }
+
+  .side-buttons .side-button {
+    gap: 4px;
+    padding: 5px 8px;
+    min-width: fit-content;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+
+  .side-buttons .side-button.first {
+    margin-left: 80px;
+  }
+
+  .lifestyle-box {
+    padding: 5px 8px;
+    border-radius: 3px;
+    flex-direction: row;
+    gap: 4px;
+    justify-content: start;
+    align-items: center;
+    border: none;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    margin-left: 80px;
+  }
+
+  .side-buttons .side-button-img {
+    padding: 3px;
+    border-radius: 100%;
+  }
+
+  .side-buttons .side-button-img.first {
+    padding: 2.5px;
+  }
+
+  .side-buttons .side-button-img img {
+    min-width: 5px;
+    min-height: 5px;
+    width: 5px;
+    height: 5px;
+  }
+
+  .side-buttons .side-button span {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .lifestyle-box p {
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  .lifestyle-box div span {
+    display: none;
+  }
+
+  .lifestyle-box button {
+    display: none;
+  }
+
+  .features {
+    position: static;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .feature-images {
+    width: 100%;
+    flex-grow: 1;
+    gap: 5%;
+  }
+
+  .feature-images div {
+    flex-grow: 1;
+    min-width: 40%;
+    height: 100px;
+  }
+
+  .feature-text {
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  .feature h4 {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: fit-content;
+  }
+
+  .feature p {
+    font-size: 14px;
+    max-width: fit-content;
+  }
+
+  .exclusive {
+    margin-top: 0px;
+    padding: 30px 20px;
+  }
+
+  .exclusive h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+
+  .exclusive p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-text h1 {
+    margin-top: -20px;
+  }
+}
