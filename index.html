@@ -46,8 +46,8 @@
         <div class="hero-text">
           <h1>Use Fashion Into Your All Collection</h1>
           <p>
-            Shopping is a bit of a relaxing hobby for me, which is
-            sometimes troubling.
+            Shopping is a bit of a relaxing hobby for me, which is sometimes
+            troubling.
           </p>
           <button>Learn More</button>
         </div>
@@ -111,5 +111,81 @@
         </p>
       </section>
     </header>
+
+    <!--mobile nav-->
+    <div id="mobile-nav-backdrop" class="">
+      <nav id="mobile-nav">
+        <div id="x-container" class="flex">
+          <img
+            class="user-icon"
+            id="close-icon"
+            src="/images/icons/x.svg"
+            alt="close-icon"
+          />
+        </div>
+
+        <div id="link-lists">
+          <ul id="nav-items">
+            <li class="nav-item"><a href="#">About us</a></li>
+            <li class="nav-item">
+              <p class="flex">
+                <span>Products</span>
+                <img src="/images/icons/chevron-down.svg" alt="caret-down-icon" />
+              </p>
+            </li>
+            <li class="nav-item"><a href="#">Collection</a></li>
+            <li class="nav-item"><a href="#">New</a></li>
+            <li class="nav-item"><a href="#">Sales</a></li>
+          </ul>
+          <ul id="user-action-list">
+            <li class="flex">
+              <a href="#" class="flex">
+                <img
+                  class="user-icon"
+                  src="/images/icons/shopping-cart.svg"
+                  alt="cart-icon"
+                />
+                <span>Nav 1</span>
+              </a>
+            </li>
+
+            <li class="flex">
+              <a href="#" class="flex">
+                <img
+                  class="user-icon"
+                  src="/images/icons/shopping-cart.svg"
+                  alt="fav-icon"
+                />
+                <span>Nav 2</span>
+              </a>
+            </li>
+            <li class="flex">
+              <a href="#" class="flex">
+                <img
+                  class="user-icon"
+                  src="/images/icons/shopping-cart.svg"
+                  alt="user-icon"
+                />
+                <span>Nav 3</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </body>
+
+  <script>
+    const sideNav = document.querySelector("#mobile-nav-backdrop");
+    const menuIcon = document.querySelector("#menu-icon");
+    const closeIcon = document.querySelector("#close-icon");
+
+    menuIcon.addEventListener("click", () => {
+      sideNav.classList.add("showNav");
+    });
+
+    closeIcon.addEventListener("click", () => {
+      sideNav.classList.remove("showNav");
+    });
+  </script>
 </html>
